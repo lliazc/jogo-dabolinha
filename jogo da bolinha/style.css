@@ -1,0 +1,140 @@
+#body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000000;
+
+}
+
+
+#main {
+    display: flex;
+    flex-direction: column; 
+    width: 100vw;
+    min-height: 100vh; 
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 20px 50px;
+    background-size: 100vh, 100vw;
+    background-position: center;
+    
+}
+
+#pontuacao {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: rgba(16, 2, 107, 0.598);
+    text-decoration: aliceblue;
+    font-size: 1.5em;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 5px;
+}
+
+#game {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    height: 300px; 
+    position: relative;
+    margin-bottom: 20px; 
+    background-image: url(img/fundo3.png) ;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid rgb(43, 149, 255);
+    box-shadow: 0px 0px 15px rgb(43, 149, 255);;
+    border-radius: 6px;
+
+}
+
+.bola {
+    width: 50px; 
+    height: 50px; 
+    position: absolute; 
+    background-size: cover;
+    background:radial-gradient(circle, rgb(239, 168, 253), rgb(225, 84, 253), rgb(213, 3, 255));
+    box-shadow:0px 0px 5px rgb(0, 0, 0);
+    box-shadow:0px 0px 15px rgb(255, 171, 212);
+    border-radius: 50%; 
+}
+
+#botoes {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+#fechar {
+        position: relative;
+        color: #0077ff;
+        border: 1px solid#0077ff;
+        box-shadow: 0 0 5px #0077ff, 0 0 5px #0077ff inset;
+        z-index: 1;
+        padding: 10px 20px;
+        background: transparent;
+      }
+      #fechar:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background: #0077ff;
+        box-shadow:
+         0 0 20px  #0077ff;
+        transition: all 0.3s ease;
+      }
+      #fechar:hover {
+        color: #fff;
+      }
+      #fechar:hover:after {
+        left: 0;
+        width: 100%;
+      }
+      #fechar:active {
+        top: 2px;
+      }
+      
+
+
+#reiniciar {
+        position: relative;
+        color: #0077ff;
+        border: 1px solid#0077ff;
+        box-shadow: 0 0 5px #0077ff, 0 0 5px #0077ff inset;
+        z-index: 1;
+        padding: 10px 20px;
+        background: transparent;
+      }
+      #reiniciar:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background: #0077ff;
+        box-shadow:
+         0 0 20px  #0077ff;
+        transition: all 0.3s ease;
+      }
+      #reiniciar:hover {
+        color: #fff;
+      }
+      #reiniciar:hover:after {
+        left: 0;
+        width: 100%;
+      }
+      #reiniciar:active {
+        top: 2px;
+      }
+      
